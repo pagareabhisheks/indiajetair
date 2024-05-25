@@ -5,7 +5,7 @@
             IndiaJet Air: India's Leading Low-Cost Airline
         </title>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" type="text/css" href="https://github.com/pagareabhisheks/indiajetair/blob/7e8df761a97690995e4f2bafb2557eb3a43f8bc2/homepage_styles">
     </head>
 
     <body>
