@@ -1,0 +1,93 @@
+ <!DOCTYPE html>
+ <html>
+    <head>
+        <title>
+            IndiaJet Air: India's Leading Low-Cost Airline
+        </title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+
+    <body>
+        <div class="float-parent-element">
+            <img src="Logo-Photoroom.png-Photoroom.png" width="100" height="100">
+            <div class="float-child-element">
+                <button class="button-80" role="button">Book Now</button>
+                <div class="dropdown">
+                    <button class="button-80" role="button">Manage Booking</button>
+                    <div class="dropdown-content">
+                        <a href="#">Check Flight Status</a>
+                        <a href="#">Change Booking Date</a>
+                        <a href="#">Check-in</a>
+                        <a href="#">Cancel Booking</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="button-80" role="button">Add-Ons</button>
+                    <div class="dropdown-content">
+                        <a href="#">IJCafé</a>
+                        <a href="#">Priority Check-in and Boarding</a>
+                        <a href="#">Add-on Baggage</a>
+                        <a href="#">IJ Experience</a>
+                    </div>
+                </div>
+                <button class="button-80" role="button">About Us</button>
+            </div>
+        </div>
+        <div class="slider"> 
+            <div class="slides">  
+                <div class="slide">
+                    <div class="slide1">
+                        <div class="grid">
+                            <div>
+                                <p style="font-size: 33px; font-weight: 600; color: #f1f1f1; margin-top: 50px; margin-left: 20px;">
+                                    IndiaJet experience goes to Suva, Fiji
+                                </p>
+                                <p style="color: #f1f1f1; margin-left: 20px; font-size: 25px;">
+                                    Fly non-stop from <strong>Dubai and Bengaluru to Suva</strong>
+                                    <br>From Dubai starting from <strong>June 18th</strong><br>From Bengaluru starting from <strong>June 25th</strong>
+                                </p>
+                                <p style="color: #f1f1f1; margin-left: 20px; font-size: 15px;">
+                                    <a href="#">Know more about Sukhoi KR860, the advanced aircraft which has powered this route &#11166</a>
+                                </p>
+                            </div>
+                            <div style="text-align: right;">
+                                <img src="kr860.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="slide">Image 2</div>  
+                <div class="slide">Image 3</div>   
+            </div>
+            <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+              </div>
+        </div>
+
+        <script>
+            let slides = document.querySelector(".slides");  
+            let slideIndex = 0;  
+            const dots = document.querySelectorAll('.dot');
+  
+            function showSlide(index) {  
+                slides.style.transform = `translateX(-${index * 100}%)`;  
+            }  
+  
+            function nextSlide() {  
+                slideIndex = (slideIndex + 1) % slides.children.length;  
+                showSlide(slideIndex);  
+            }  
+            setInterval(nextSlide, 7000);   
+            dots.forEach((dot,i)=>{
+            dot.addEventListener("click",(e)=>{
+                index=i;
+                e.target.style.opacity='1'
+                showSlide(i);
+            })
+            });
+        </script>
+    </body>
+ </html>
